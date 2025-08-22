@@ -10,7 +10,7 @@
 // --- Declaraciones (El "qué") ---
 int sumar(int num1, int num2);
 int restar(int num1, int num2);
-
+int factorial(int num9);
 using std::cout;
 
 // Ejemplos con arreglos
