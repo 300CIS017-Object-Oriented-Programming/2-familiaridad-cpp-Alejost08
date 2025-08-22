@@ -1,6 +1,7 @@
 // main.cpp
 #include <iostream>
 #include "matematicas.h" // Incluimos nuestro contrato
+using namespace std;
 
 void probarMatematicas()
 {
@@ -20,14 +21,27 @@ void probarMatematicas()
     std::cin >> num9;
     std::cin.clear();
     std::cin.ignore(10000, '\n');
+    int base;
+    cout << "Ingresa el numero del que necesitas su exponente: " << endl;
+    cin >> base;
+    cin.clear();
+    cin.ignore(10000, '\n');
+    int exponente;
+    cout <<"Escribe el exponente que lleva este numero: "<< endl;
+    cin >> exponente;
+    cin.clear();
+    cin.ignore(10000, '\n');
 
-    int resultado_factorial = factorial(num9);
+
+    int resultado_factorial = factorial(num9); //Funciona
     int resultado_suma = sumar(num1, num2); // Funciona
     int resultado_resta = restar(num1, num2); // Funciona
+    int resultado_exponente = potencia(base, exponente); // Funciona
 
     std::cout << "Suma: " << resultado_suma << std::endl;
     std::cout << "Resta: " << resultado_resta << std::endl;
     std::cout << "Factorial: "<< resultado_factorial<<std::endl;
+    cout << "La potencia de este numero es :"<< resultado_exponente << endl;
 }
 
 void probarArreglos()
